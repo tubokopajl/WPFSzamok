@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Kérdések" Height="350" Width="525">
+        Title="Kérdések" Height="350" Width="570">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -16,6 +17,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="3*"/>
+
         </Grid.ColumnDefinitions>
 
         <!-- 2. feladat -->
@@ -27,7 +29,7 @@
         </StackPanel>
 
         <!-- 3. feladat -->
-   
+
         <TextBlock Grid.Row="1" Grid.Column="0" Text="3. feladat:"/>
         <TextBlock x:Name="lbFel3" Grid.Row="1" Grid.Column="1" Text="Az adatfájlban 0 matematika feladat van.&#x0a;1 pontot ér 0 feladat&#x0a;2 pontot ér 0 feladat&#x0a;3 pontot ér 0 feladat" TextWrapping="Wrap"/>
         <!-- 4. feladat -->
@@ -47,15 +49,21 @@
         <TextBlock Grid.Row="3" Grid.Column="0" Text="6. feladat:"/>
         <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
             <TextBlock Text="Témakör: "/>
-            <ComboBox x:Name="cbFel5" Width="150">
+            <ComboBox x:Name="cbFel5" Width="150" SelectionChanged="cbFel5_SelectionChanged">
             </ComboBox>
         </StackPanel>
 
         <!-- Kérdés és válasz -->
-        <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
-            <TextBlock Text="Kérdés: Melyik évben volt a nándorfehérvári diadal? "/>
-            <TextBox Width="50" Text="0"/>
-            <Button Content="Ellenőrzés" Width="100"/>
+        <StackPanel Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <TextBlock Text="Kérdés: "/>
+            <Label x:Name="tbKerdes" Content="" Width="Auto"></Label>
+            
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <TextBlock Text="Válasz: "/>
+            <TextBox x:Name="tbValasz" Width="100"></TextBox>
+            <Button x:Name="btEll" Content="Ellenőrzés" Width="100" Click="btEll_Click"/>
         </StackPanel>
     </Grid>
 </Window>
