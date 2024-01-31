@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://nagymilan.nhely.hu/index.html -->
+<html data-bs-theme="dark" lang="en" class=" pnjpddizw idc0_350"><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Nagy Milán</title>
+    <link rel="icon" type="image/png" sizes="500x500" href="./Nagy Milán_files/DALL_E_2024-01-21_14.18.15_-_Create_a_sophisticated_and_abstract_logo_without_any_text_or_letters._The_design_should_be_artistic_and_evoke_a_sense_of_modernity_and_professionalism-removebg-preview.png">
+    <link rel="stylesheet" href="./Nagy Milán_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/Flaticon.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/FontAwesome.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/Linearicons-Free.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/aos.min.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/animate.min.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/bootstrap.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/style.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/owl.carousel.min.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/simpleLightbox.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/nice-select.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/animate.css">
+    <link rel="stylesheet" href="./Nagy Milán_files/Flaticon(1).css">
+    <link rel="stylesheet" href="./Nagy Milán_files/style(1).css">
+    <link rel="stylesheet" href="./Nagy Milán_files/responsive.css">
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <header class="header_area navbar_fixed">
+        <div class="main_menu" id="mainNav">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container box_1620"><a class="navbar-brand logo_h" href="http://nagymilan.nhely.hu/index.html"><img src="./Nagy Milán_files/DALL_E_2024-01-21_14.18.15_-_Create_a_sophisticated_and_abstract_logo_without_any_text_or_letters._The_design_should_be_artistic_and_evoke_a_sense_of_modernity_and_professionalism-removebg-preview.png" alt="" width="54" height="54" style="height: 100%;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarSupportedContent" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="http://nagymilan.nhely.hu/index.html">Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="home_banner_area">
+        <div class="banner_inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="home_left_img"><img class="bg-light border rounded-pill border-0 border-white shadow-lg d-xxl-flex justify-content-xxl-end align-items-xxl-end jello animated infinite" alt="" src="./Nagy Milán_files/IMG_2641-removebg-preview.png" width="365" height="455"></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="banner_content">
+                            <h5>Ez vagyok én</h5>
+                            <h2>nagy Milán</h2>
+                            <p>Nagy Milán vagyok, szoftverfejlesztő hallgató és számítógép-tudomány iránti lelkes hobbista. Magyarországon élek, és magabiztosan beszélek magyarul és angolul.</p><a class="shake animated infinite banner_btn" href="http://nagymilan.nhely.hu/index.html#">Tovább</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="welcome_area p_120">
+        <div class="container">
+            <div class="row welcome_inner">
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+                    <div class="welcome_text">
+                        <h4>MAGAMRÓL</h4>
+                        <p>Nagy Milán vagyok, szenvedélyes szoftverfejlesztő hallgató és informatikai hátterű számítógép-tudományi hobbista. Magyarországon élek, ahol az informatikai és technológiai fejlesztések területén szeretek elmélyülni. Professzionális szinten beszélek magyarul és angolul, és jól ismerem a Linuxot és a Windowst. Tapasztalatom van a C#, JavaScript, HTML és CSS programozási nyelvekben, és jelenleg a Python és a Bootstrap technológiákat tanulmányozom. A fő rendszerem a Windows 10, amelyen keresztül új és izgalmas technológiák felfedezésében veszek részt.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div data-aos="fade-up" class="tools_expert aos-init aos-animate">
+                        <h3>SZAKÉRTELMEm</h3>
+                        <div class="skill_main">
+                            <div class="skill_item">
+                                <h4>C#&nbsp;<span class="counter">85</span>%</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill_item">
+                                <h4>JavaScript&nbsp;<span class="counter">90</span>%</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill_item">
+                                <h4>Html / Css&nbsp;<span class="counter">70</span>%</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill_item">
+                                <h4>Python&nbsp;<span class="counter">95</span>%</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill_item">
+                                <h4>Office&nbsp;<span class="counter">75</span>%</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer_area p_120" style="background: rgb(0,0,0);">
+        <div class="container">
+            <div class="row footer_inner">
+                <div class="col-sm-6 col-lg-5">
+                    <aside class="f_widget ab_widget">
+                        <div class="f_title">
+                            <h3>Tippek</h3>
+                        </div>
+                        <p>Szeretne még sikeresebb lenni? Tanulja meg szeretni a tanulást és a növekedést. Minél több erőfeszítést teszel a képességeid fejlesztésére,</p>
+                        <p>Copyright © Minden jog fenntartva | Nagy Milán</p>
+                    </aside>
+                </div>
+                <div class="col-sm-6 col-lg-5">
+                    <aside class="f_widget news_widget">
+                        <div class="f_title">
+                            <h3>HÍRLEVÉL</h3>
+                        </div>
+                        <p>Maradjon naprakész a legújabb trendekkel</p>
+                        <div id="mc_embed_signup">
+                            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative" novalidate="true">
+                                <div class="input-group d-flex flex-row"><input type="email" class="flash animated" name="EMAIL" placeholder="Adja meg az e-mail címét" required=""><button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button></div>
+                                <div class="mt-10 info"></div>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./Nagy Milán_files/bootstrap.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/aos.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/bs-init.js.letöltés"></script>
+    <script src="./Nagy Milán_files/jquery-3.2.1.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/popper.js.letöltés"></script>
+    <script src="./Nagy Milán_files/bootstrap.min(1).js.letöltés"></script>
+    <script src="./Nagy Milán_files/stellar.js.letöltés"></script>
+    <script src="./Nagy Milán_files/simpleLightbox.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/jquery.nice-select.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/imagesloaded.pkgd.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/isotope-min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/owl.carousel.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/jquery.ajaxchimp.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/jquery.waypoints.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/jquery.counterup.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/mail-script.js.letöltés"></script>
+    <script src="./Nagy Milán_files/gmaps.min.js.letöltés"></script>
+    <script src="./Nagy Milán_files/theme.js.letöltés"></script>
+
+
+</body></html>
