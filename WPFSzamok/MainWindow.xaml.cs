@@ -26,7 +26,7 @@ namespace WPFSzamok
             feladatok = new();
             InitializeComponent();
             btEll.IsEnabled = false;
-            FajlFeltolt();
+            FajlFeltolt("felszam.txt");
             Fel2();
             Fel3();
             Fel4();
@@ -34,9 +34,9 @@ namespace WPFSzamok
             Fel7();
         }
 
-        void FajlFeltolt()
+        void FajlFeltolt(string path)
         {
-            using (StreamReader sr = new StreamReader("felszam.txt"))
+            using (StreamReader sr = new StreamReader(path))
             {
                 while (!sr.EndOfStream)
                 {
