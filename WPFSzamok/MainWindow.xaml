@@ -1,0 +1,61 @@
+﻿<Window x:Class="WPFSzamok.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Kérdések" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- 2. feladat -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="2. feladat:"/>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+            <TextBlock Text="Az állományban "/>
+            <TextBox x:Name="tbFel2" Width="50" Text="0"/>
+            <TextBlock Text=" db kérdés van"/>
+        </StackPanel>
+
+        <!-- 3. feladat -->
+   
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="3. feladat:"/>
+        <TextBlock x:Name="lbFel3" Grid.Row="1" Grid.Column="1" Text="Az adatfájlban 0 matematika feladat van.&#x0a;1 pontot ér 0 feladat&#x0a;2 pontot ér 0 feladat&#x0a;3 pontot ér 0 feladat" TextWrapping="Wrap"/>
+        <!-- 4. feladat -->
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="4. feladat:"/>
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="A legmagasabb érték a válaszok között: "/>
+                <TextBox x:Name="tbFel4a" Width="50" Text="0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="A legalacsonyabb érték a válaszok között: "/>
+                <TextBox x:Name="tbFel4b" Width="50" Text="0"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- 6. feladat -->
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="6. feladat:"/>
+        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+            <TextBlock Text="Témakör: "/>
+            <ComboBox x:Name="cbFel5" Width="150">
+            </ComboBox>
+        </StackPanel>
+
+        <!-- Kérdés és válasz -->
+        <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <TextBlock Text="Kérdés: Melyik évben volt a nándorfehérvári diadal? "/>
+            <TextBox Width="50" Text="0"/>
+            <Button Content="Ellenőrzés" Width="100"/>
+        </StackPanel>
+    </Grid>
+</Window>
